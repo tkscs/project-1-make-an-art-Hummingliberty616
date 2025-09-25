@@ -4,13 +4,13 @@ from turtle import right, left, forward, backward, speed
 
 
 side_length = 5  
-circumference = side_length * 100
-radius = circumference/(3.14*2)
-def draw_circle():
-    for i in range(1,101):
+def draw_circle(number_of_sides):
+    for i in range(1,number_of_sides+1):
+        circumference = side_length * number_of_sides
+        radius = circumference/(3.14*2)
         speed(i)
         forward(side_length)
-        right(360/100)
+        right(360/number_of_sides)
 
 def draw_interior(): 
     forward(radius)
@@ -26,12 +26,12 @@ def draw_interior():
     left(45)
     forward(radius)
 
-draw_circle()
+draw_circle(100)
 right(90)
 draw_interior()
 forward(100)
 left(90)
-draw_circle()
+draw_circle(101)
 right(90)
 draw_interior()
 
