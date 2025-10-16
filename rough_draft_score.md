@@ -1,4 +1,4 @@
-Overall Final Draft Score: 25 / 30
+Overall Rough Draft Score: 25 / 20
 
 * [ 10 / 10 ] Working code
 
