@@ -6,6 +6,7 @@ from turtle import right, left, forward, backward, speed
 
 side_length = 5 #A variable, changing the variable changes the picture, variable must be between five and ten.  
 circumference = side_length * 100 #Another variable, changing the variable changes the picture.
+
 radius = circumference/(2*3.14)   
 def draw_circle(number_of_sides): #A function with at least one parameter. 
     for i in range(1,number_of_sides+1): #For loop.        
@@ -40,17 +41,16 @@ forward(50)
 right(90)
 forward(100)
 
+corner_angle = 90 #
 for j in range(1,40): #Yet another for loop, changes behavior each iteration.
     speed(10)
     turtle.forward(5*j)
-    turtle.right(90)
+    turtle.right(corner_angle)
 forward(100)
-left(90)
+left(corner_angle)
 forward(100)
 for k in range(1,40):
     speed(10)
     forward(5*k)
-    left(90)
-
-
+    left(corner_angle)
 turtle.exitonclick()
