@@ -3,7 +3,7 @@ import turtle
 from turtle import right, left, forward, backward, speed
 
 
-side_length = 5
+side_length = 5 #
 circumference = side_length * 100
 radius = circumference/(2*3.14)   
 def draw_circle(number_of_sides): 
@@ -39,15 +39,17 @@ forward(50)
 right(90)
 forward(100)
 
+
+corner_angle = 90 #
 for j in range(1,40):
     speed(10)
     turtle.forward(5*j)
-    turtle.right(90)
+    turtle.right(corner_angle)
 forward(100)
-left(90)
+left(corner_angle)
 forward(100)
 for k in range(1,40):
     speed(10)
     forward(5*k)
-    left(90)
+    left(corner_angle)
 turtle.exitonclick()
